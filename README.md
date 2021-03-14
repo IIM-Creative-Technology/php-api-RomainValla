@@ -42,33 +42,41 @@ Create a database named iim-laravel-romainvalla
 Go on TablePlus or Sequel pro and create a database named api-laravel
 Launch your Php with Laragon or Mamp
 Launch the migrations and seeds
+
 ```
 php artisan migrate
 ```
 
-
 Launch the migrations and seeds
+
 ```
 php artisan db:seed
 ```
+
 Launch the app
 
-
-php artisan serve
-```
-Launch the app
 ```
 php artisan serve
 ```
+
+Launch the app
+
+```
+php artisan serve
+```
+
 Start testing routes on Postman
 
 Login with admin accounts :
+
 ```
 GET /api/auth/login
 ```
+
 Use one of emails in users database
 
 with the password :
+
 ```
 password
 ```
@@ -79,6 +87,7 @@ CLASSES
 </h1>
 
 List of classes
+
 ```
 GET /classes
 ```
@@ -136,18 +145,25 @@ TEACHERS
 
 
 List of teachers
+
 ```
 GET /teachers
 ```
+
 Get a specific teacher
+
 ```
 GET /teachers/{id}
 ```
+
 Create a teacher
+
 ```
 POST /teachers with parameters 'firstname','lastname','start_year'
 ```
+
 Update a teacher
+
 ```
 PUT /teachers/{id}
 ```
@@ -159,18 +175,25 @@ COURSES
 
 
 List of courses
+
 ```
 GET /courses
 ```
+
 Get a specific course
+
 ```
 GET /courses/{id}
 ```
+
 Create a course
+
 ```
 POST /courses with parameters 'name','start_at','end_at','promotion_id','teacher_id'
 ```
+
 Update a course
+
 ```
 PUT /courses/{id} with any or all of the post parameters
 ```
@@ -181,21 +204,29 @@ GRADES
 
 
 List of scores
+
 ```
 GET /scores
 ```
+
 List of scores of a specific student
+
 ```
 GET /scores/{id} with query parameter 'id_student'
 ```
+
 List of scores of a specific student in a specific course
+
 ```
 GET /scores/{id} with query parameter 'studentId', 'courseId'
 ```
+
 Create a score for a student in a specific course
+
 ```
 POST /scores with parameters 'score', 'student_id', 'course_id'
 ```
+
 <p align="center">
 Romain Valla
 </p>
