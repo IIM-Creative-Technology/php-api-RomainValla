@@ -4,18 +4,16 @@ Welcome
 <p align="center">
 Framework : Laravel
 </p>
-<p align="left">
-To see the project :
-</p>
 
 
-1. Install PHP (at least 7.4 version) and MySQL
 
-1. Install [mamp] for MacOS (https://www.mamp.info/)
+1. Install PHP and MySQL
 
-1. Install a database reader such as TablePlus
+1. Install MAMP for MacOS
 
-1. Install a client request tester such as Postman
+1. Install TablePlus for the database
+
+1. Install Postman to test API
 
 1. Install Composer
 
@@ -32,9 +30,6 @@ cd php-api-RomainValla && composer install
 ```
 
 7. Create a database named iim-laravel-romainvalla
-
-    7. Go on TablePlus and create a database named iim-laravel-romainvalla
-    7. Launch your Php with Mamp
 
 7. Launch the migrations and seeds
 
