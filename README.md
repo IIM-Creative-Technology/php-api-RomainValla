@@ -34,7 +34,7 @@ cd php-api-RomainValla && composer install
 7. Create a database named iim-laravel-romainvalla
 
     7. Go on TablePlus and create a database named iim-laravel-romainvalla
-    7. Launch your Php with Laragon or Mamp
+    7. Launch your Php with Mamp
 
 7. Launch the migrations and seeds
 
@@ -42,7 +42,7 @@ cd php-api-RomainValla && composer install
 php artisan migrate
 ```
 
-9. Launch the migrations and seeds
+9. Launch the seeds
 
 ```
 php artisan db:seed
@@ -54,18 +54,12 @@ php artisan db:seed
 php artisan serve
 ```
 
-11. Launch the app
-
-```
-php artisan serve
-```
-
-12. Start testing routes on Postman
+11. Start testing routes on Postman
 
 Login with admin accounts :
 
 ```
-GET /api/auth/login
+GET 127.0.0.1:8000/api/auth/login
 ```
 
 Use one of emails in users database
@@ -84,21 +78,21 @@ CLASSES
 List of classes
 
 ```
-GET /classes
+GET 127.0.0.1:8000/classes
 ```
 
 Create a class
 ```
-POST /classes with parameters 'name', 'year'
+POST 127.0.0.1:8000/classes with parameters 'name', 'year'
 ```
 Update a class
 ```
-PUT /classes with parameters 'name', 'year'
+PUT 127.0.0.1:8000/classes with parameters 'name', 'year'
 ```
 
 Get student by class
 ```
-GET /classes/{name}
+GET 127.0.0.1:8000/classes/{name}
 ```
 
 <h1 align="center">
@@ -108,27 +102,27 @@ STUDENTS
 
 List of students
 ```
-GET /students
+GET 127.0.0.1:8000/students
 ```
 
 Get a specific student
 ```
-GET /students/{id}
+GET 127.0.0.1:8000/students/{id}
 ```
 
 Create a student
 ```
-POST /students with parameters 'firstname','lastname','age','start_year','id_year'
+POST 127.0.0.1:8000/students with parameters 'firstname','lastname','age','start_year','id_year'
 ```
 
 Update a student
 ```
-PUT /students/{id} with any or all of the post parameters
+PUT 127.0.0.1:8000/students/{id} with any or all of the post parameters
 ```
 
 Delete a student
 ```
-DELETE /students/{id}
+DELETE 127.0.0.1:8000/students/{id}
 ```
 
 
@@ -142,25 +136,25 @@ TEACHERS
 List of teachers
 
 ```
-GET /teachers
+GET 127.0.0.1:8000/teachers
 ```
 
 Get a specific teacher
 
 ```
-GET /teachers/{id}
+GET 127.0.0.1:8000/teachers/{id}
 ```
 
 Create a teacher
 
 ```
-POST /teachers with parameters 'firstname','lastname','start_year'
+POST 127.0.0.1:8000/teachers with parameters 'firstname','lastname','start_year'
 ```
 
 Update a teacher
 
 ```
-PUT /teachers/{id}
+PUT 127.0.0.1:8000/teachers/{id}
 ```
 
 
@@ -172,25 +166,25 @@ COURSES
 List of courses
 
 ```
-GET /courses
+GET 127.0.0.1:8000/courses
 ```
 
 Get a specific course
 
 ```
-GET /courses/{id}
+GET 127.0.0.1:8000/courses/{id}
 ```
 
 Create a course
 
 ```
-POST /courses with parameters 'name','start_at','end_at','promotion_id','teacher_id'
+POST 127.0.0.1:8000/courses with parameters 'name','start_at','end_at','promotion_id','teacher_id'
 ```
 
 Update a course
 
 ```
-PUT /courses/{id} with any or all of the post parameters
+PUT 127.0.0.1:8000/courses/{id}
 ```
 
 <h1 align="center">
@@ -198,28 +192,28 @@ GRADES
 </h1>
 
 
-List of scores
+List of grades
 
 ```
-GET /scores
+GET 127.0.0.1:8000/grades
 ```
 
-List of scores of a specific student
+List of grades of a specific student
 
 ```
-GET /scores/{id} with query parameter 'id_student'
+GET 127.0.0.1:8000/grades/{id} with query parameter 'id_student'
 ```
 
-List of scores of a specific student in a specific course
+List of grades of a specific student in a specific course
 
 ```
-GET /scores/{id} with query parameter 'studentId', 'courseId'
+GET 127.0.0.1:8000/grades/{id}
 ```
 
-Create a score for a student in a specific course
+Create a grade for a student in a specific course
 
 ```
-POST /scores with parameters 'score', 'student_id', 'course_id'
+POST 127.0.0.1:8000/grades with parameters 'grade', 'id_score', 'id_course'
 ```
 
 <p align="center">
