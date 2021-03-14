@@ -42,25 +42,25 @@ cd php-api-RomainValla && composer install
 php artisan migrate
 ```
 
-7. Launch the migrations and seeds
+9. Launch the migrations and seeds
 
 ```
 php artisan db:seed
 ```
 
-7. Launch the app
+10. Launch the app
 
 ```
 php artisan serve
 ```
 
-7. Launch the app
+11. Launch the app
 
 ```
 php artisan serve
 ```
 
-7. Start testing routes on Postman
+12. Start testing routes on Postman
 
 Login with admin accounts :
 
