@@ -9,39 +9,34 @@ To see the project :
 </p>
 
 
-Install PHP (at least 7.4 version) and MySQL
+1. Install PHP (at least 7.4 version) and MySQL
 
-Install [laragon] for Windows (https://laragon.org/) Install [mamp] for MacOS (https://www.mamp.info/)
+1. Install [mamp] for MacOS (https://www.mamp.info/)
 
-Install a database reader such as TablePlus or SequelPro
+1. Install a database reader such as TablePlus
 
-Install [tableplus] for Windows (https://tableplus.com/) Install [mysequelpro] for MacOS (https://www.sequelpro.com/)
+1.Install a client request tester such as Postman
 
-Install a client request tester such as Postman
+1.Install Composer
 
-Install [postman] (https://www.postman.com/downloads/)
-
-Install Composer 1
-
-https://getcomposer.org/
-
-Clone the project
+1.Clone the project
 ```
 git clone https://github.com/IIM-Creative-Technology/php-api-RomainValla.git
 ```
 
-Install the dependencies
+1. Install the dependencies
 
 Enter the cloned directory in your terminal :
 ```
 cd php-api-RomainValla && composer install
 ```
 
-Create a database named iim-laravel-romainvalla
+1. Create a database named iim-laravel-romainvalla
 
-Go on TablePlus or Sequel pro and create a database named api-laravel
-Launch your Php with Laragon or Mamp
-Launch the migrations and seeds
+    1. Go on TablePlus and create a database named iim-laravel-romainvalla
+    1. Launch your Php with Laragon or Mamp
+
+1. Launch the migrations and seeds
 
 ```
 php artisan migrate
