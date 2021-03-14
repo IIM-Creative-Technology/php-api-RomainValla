@@ -15,52 +15,52 @@ To see the project :
 
 1. Install a database reader such as TablePlus
 
-1.Install a client request tester such as Postman
+1. Install a client request tester such as Postman
 
-1.Install Composer
+1. Install Composer
 
-1.Clone the project
+1. Clone the project
 ```
 git clone https://github.com/IIM-Creative-Technology/php-api-RomainValla.git
 ```
 
-1. Install the dependencies
+Install the dependencies
 
 Enter the cloned directory in your terminal :
 ```
 cd php-api-RomainValla && composer install
 ```
 
-1. Create a database named iim-laravel-romainvalla
+7. Create a database named iim-laravel-romainvalla
 
-    1. Go on TablePlus and create a database named iim-laravel-romainvalla
-    1. Launch your Php with Laragon or Mamp
+    7. Go on TablePlus and create a database named iim-laravel-romainvalla
+    7. Launch your Php with Laragon or Mamp
 
-1. Launch the migrations and seeds
+7. Launch the migrations and seeds
 
 ```
 php artisan migrate
 ```
 
-Launch the migrations and seeds
+7. Launch the migrations and seeds
 
 ```
 php artisan db:seed
 ```
 
-Launch the app
+7. Launch the app
 
 ```
 php artisan serve
 ```
 
-Launch the app
+7. Launch the app
 
 ```
 php artisan serve
 ```
 
-Start testing routes on Postman
+7. Start testing routes on Postman
 
 Login with admin accounts :
 
