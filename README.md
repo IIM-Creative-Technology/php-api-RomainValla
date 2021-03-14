@@ -50,9 +50,10 @@ php artisan migrate
 Launch the migrations and seeds
 ```
 php artisan db:seed
-
-Launch the app
 ```
+Launch the app
+
+
 php artisan serve
 ```
 Launch the app
@@ -62,8 +63,9 @@ php artisan serve
 Start testing routes on Postman
 
 Login with admin accounts :
-
+```
 GET /api/auth/login
+```
 Use one of emails in users database
 
 with the password :
